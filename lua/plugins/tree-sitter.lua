@@ -8,31 +8,31 @@ return {
     main = "nvim-treesitter.configs",
     opts = {
         ensure_installed = {
-	    "lua",
-	    "luadoc",
-	    "javascript",
-	    "python",
-	    "html",
-	},
-	highlight = {
-	    enable = true,
+      "lua",
+      "luadoc",
+      "javascript",
+      "python",
+      "html",
+  },
+  highlight = {
+      enable = true,
         },
-	indent = {
-	    enable = true,
-	},
-	textobjects = {
-	    select = {
-	        enable = true,
-		lookahead = true,
-		keymaps = {
-		    ["af"] = "@function.outer",
-		    ["if"] = "@function.inner",
-		    ["ac"] = "@conditional.outer",
-		    ["ic"] = "@conditional.inner",
-		    ["al"] = "@loop.outer",
-		    ["il"] = "@loop.inner",
-	        },
-	    },
+  indent = {
+      enable = true,
+  },
+  textobjects = {
+      select = {
+          enable = true,
+    lookahead = true,
+    keymaps = {
+        ["af"] = "@function.outer",
+        ["if"] = "@function.inner",
+        ["ac"] = "@conditional.outer",
+        ["ic"] = "@conditional.inner",
+        ["al"] = "@loop.outer",
+        ["il"] = "@loop.inner",
+          },
+      },
        },
    },
 }
